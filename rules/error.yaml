@@ -1,0 +1,18 @@
+name: error
+type: frequency
+index: logstash-access-*
+num_events: 1
+timeframe:
+    minutes: 5
+filter:
+    - query:
+        query_string:
+            query: "response: 500"
+alert: email
+es_host: elasticsearch
+es_port: 9200
+es_username: elastic
+es_password: iyuTruYoVnBip4LclvLG
+email:
+    - "lmadbc846@163.com"
+
