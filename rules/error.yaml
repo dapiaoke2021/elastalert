@@ -8,11 +8,9 @@ filter:
     - query:
         query_string:
             query: "response: 500"
-alert: email
+alert: http
 es_host: elasticsearch
 es_port: 9200
 es_username: elastic
 es_password: iyuTruYoVnBip4LclvLG
-email:
-    - "lmadbc846@163.com"
-
+http_post_url: "http://47.103.109.71:9119/send/1058704380"
